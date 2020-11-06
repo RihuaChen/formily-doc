@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- '12'
+- '14'
 before_install:
 - MESSAGE=$(git log --format=%B -n 1 $TRAVIS_COMMIT)
 - echo $TRAVIS_COMMIT
@@ -10,12 +10,12 @@ install:
 test: true
 script:
 - yarn build
-# cache: yarn
+cache: yarn
 after_success:
 - MESSAGE=$(git log --format=%B -n 1 $TRAVIS_COMMIT)
 - cd dist
 - cp index.html 404.html
-# - echo GH_TOKEN:$GH_TOKEN
+- echo GH_TOKEN:$GH_TOKEN
 # - sed -i "s/GH_TOKEN:\"$GH_TOKEN\"\,/ /g" umi.js
 deploy:
   provider: pages
