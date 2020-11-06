@@ -1,0 +1,31 @@
+language: node_js
+node_js:
+- '12'
+before_install:
+- MESSAGE=$(git log --format=%B -n 1 $TRAVIS_COMMIT)
+- echo $TRAVIS_COMMIT
+- echo ${MESSAGE}
+install:
+- yarn
+test: true
+script:
+- yarn docs:build
+# cache: yarn
+after_success:
+- MESSAGE=$(git log --format=%B -n 1 $TRAVIS_COMMIT)
+- cd dist
+- cp index.html 404.html
+- echo GH_TOKEN:$GH_TOKEN
+- sed -i "s/GH_TOKEN:\"$GH_TOKEN\"\,/ /g" umi.js
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: "$GH_TOKEN"
+  on:
+    branch: main
+  repo: RihuaChen/formily-doc/gh-page
+  target_branch: gh-page
+  local_dir: dist
+env:
+  global:
+    secure: SY80uXWG5a3Ubsxi1xMhnJ6etrOKnI2ddx3mz0+4QZk/zngQJsaFo/dWDqI+5Vus+EmO/F377YIKq6XiBpoyw8sFFqYsjULacK7fwD4ST0YltQgN/fyvXHcddGuK0x1+4MIABQBfVNojmMTaBhU8e01vz4ftz5vm4/Xxc48CgLntJiHlAdf7OGH63LHBUG0/Wu92z0Exh7OogDr5ziKiMhNVO46OsL3Tj6z/D2GZNx/JLT5OHO/KaRpDOc95V8sK9SfwV6re7ts6f5FHu3qHsAXHQQ8wKDTg1QHPJMHxS1GXptj65cImMqwLF1/yUp29V5n7jK4DsZI8DLSn7f6NGNcQzIYnRJGMiuvXE5j6vlzF8Qx45ol5XSkLp4hyNWd+tldP2kua1PpvAz/Ws3sYbWN66ofarWuiVHJf10bCJdB/o+JrRsAgAEHa+2BmkSRwMC3mG/rKikMnzGaEVqc5FyMKEY/Ns4NMJHocuncJnJQzZX6KIwCQTfFe5zk9ImUIppTOQMRerrW8ccr+mSY0zZYEcf9VwapOOJQHTcYK32oACNhuaC5SuR54Rhq+9uEYAESngQ+n/ix4eDbVCiMHxMZ6Hy21CVJHoRCkyYlhbDi70zIqeaIfetQdyZ2prha58LalxDRtm608tIbUgqOy6yVn2hVfTymTTusFsWK+NvY=
