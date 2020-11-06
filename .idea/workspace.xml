@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cf64cfe2-bad7-4a1a-9297-95acc24ac0d4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="ProjectId" id="1j5eTCNHWrv3Qu5yFTNR2uIMEN9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/linkage" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/linkage/一对多联动" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/linkage" />
+      <recent name="$PROJECT_DIR$/src/utils" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf64cfe2-bad7-4a1a-9297-95acc24ac0d4" name="Default Changelist" comment="" />
+      <created>1603098386031</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603098386031</updated>
+      <workItem from="1603098387198" duration="4630000" />
+      <workItem from="1603183800639" duration="2451000" />
+      <workItem from="1603680496702" duration="3813000" />
+      <workItem from="1604371711970" duration="68000" />
+      <workItem from="1604372013019" duration="4000" />
+      <workItem from="1604372043346" duration="580000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="440" width="577" height="240" key="#Markdown" timestamp="1603098687862">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="690" y="440" width="577" height="240" key="#Markdown/-1116.0.1116.756/0.0.1792.1120@0.0.1792.1120" timestamp="1603098687862" />
+    <state x="568" y="256" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603100642825">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="568" y="256" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1116.0.1116.756/0.0.1792.1120@0.0.1792.1120" timestamp="1603100642825" />
+    <state x="466" y="369" key="EditFileWatcherDialog" timestamp="1603098614014">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="466" y="369" key="EditFileWatcherDialog/-1116.0.1116.756/0.0.1792.1120@0.0.1792.1120" timestamp="1603098614014" />
+    <state x="338" y="182" width="1125" height="897" key="SettingsEditor" timestamp="1603098616227">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="338" y="182" width="1125" height="897" key="SettingsEditor/-1116.0.1116.756/0.0.1792.1120@0.0.1792.1120" timestamp="1603098616227" />
+  </component>
+</project>

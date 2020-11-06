@@ -1,0 +1,47 @@
+{
+  "private": true,
+  "name": "dumi-app",
+  "scripts": {
+    "start": "dumi dev",
+    "build": "dumi build",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\""
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "devDependencies": {
+    "@formily/antd": "^1.3.6",
+    "@formily/antd-components": "^1.3.6",
+    "@types/classnames": "^2.2.10",
+    "@types/js-cookie": "^2.2.6",
+    "@types/localforage": "^0.0.34",
+    "@types/uuid": "^8.3.0",
+    "@umijs/fabric": "^2.3.0",
+    "@umijs/preset-react": "^1.6.13",
+    "cross-env": "^7.0.2",
+    "dumi": "^1.0.9",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.2",
+    "mockjs": "^1.1.0",
+    "prettier": "^2.1.2",
+    "stylelint": "^13.7.2",
+    "yorkie": "^2.0.0"
+  },
+  "dependencies": {
+    "ahooks": "^2.7.0",
+    "js-cookie": "^2.2.1",
+    "localforage": "^1.9.0",
+    "styled-components": "^5.2.0"
+  }
+}

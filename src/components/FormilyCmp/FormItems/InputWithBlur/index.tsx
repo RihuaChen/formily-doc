@@ -1,0 +1,41 @@
+import React, {useEffect, useState}from 'react'
+import {Input as AntdInput} from 'antd'
+
+const Input = props => {
+
+    const { value, schema, className, editable, path, mutators, form } = props;
+
+    const componentProps = schema.getExtendsComponentProps() || {};
+  
+    const onChange = value => {
+      mutators.change(value);
+      if (componentProps.onChange) componentProps.onChange(value);
+    };
+
+    const onBlur = value => {
+      //执行formily的mutators函数，通知formily的blur事件已发生。
+      mutators.blur(value);
+      //如果用户在 ‘x-component-props'中配置了onBlur事件，则触发该事件。
+      if (componentProps.onBlur) componentProps.onBlur(value);
+      //这里扩展生命周期，添加了一个 onBlur的生命周期事件。
+      form.notify('onBlur', { ...props });
+    };
+
+    // 只读模式下，直接采用文本方式显示
+    if (!editable) {
+      return <div>{value}</div>;
+    }
+  
+    return (
+      <AntdInput
+        {...componentProps}
+        value={value}
+        onChange={onChange}
+        onBlur={onBlur}
+      />
+    );
+  };
+
+  Input.isFieldComponent = true;
+  
+  export default Input;
