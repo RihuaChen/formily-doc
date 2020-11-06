@@ -15,15 +15,15 @@ after_success:
 - MESSAGE=$(git log --format=%B -n 1 $TRAVIS_COMMIT)
 - cd dist
 - cp index.html 404.html
-- echo GH_TOKEN:$GH_TOKEN
-- sed -i "s/GH_TOKEN:\"$GH_TOKEN\"\,/ /g" umi.js
+# - echo GH_TOKEN:$GH_TOKEN
+# - sed -i "s/GH_TOKEN:\"$GH_TOKEN\"\,/ /g" umi.js
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: "$GH_TOKEN"
   on:
     branch: main
-  repo: RihuaChen/formily-doc/gh-page
+  repo: RihuaChen/formily-doc
   target_branch: gh-page
   local_dir: dist
 env:
