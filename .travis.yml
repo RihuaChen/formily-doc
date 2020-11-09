@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- '14'
+- '12'
 before_install:
 - MESSAGE=$(git log --format=%B -n 1 $TRAVIS_COMMIT)
 - echo $TRAVIS_COMMIT
