@@ -6,7 +6,7 @@ before_install:
 - echo $TRAVIS_COMMIT
 - echo ${MESSAGE}
 install:
-- npm
+- npm i
 test: true
 script:
 - npm run build
