@@ -6,10 +6,10 @@ before_install:
 - echo $TRAVIS_COMMIT
 - echo ${MESSAGE}
 install:
-- yarn
+- npm
 test: true
 script:
-- yarn build
+- npm run build
 # cache: yarn
 after_success:
 - MESSAGE=$(git log --format=%B -n 1 $TRAVIS_COMMIT)
