@@ -63,37 +63,46 @@ const schema = {
             },
           ],
         },
-        AA: {
-          ...testProps,
-          key: 'AA',
-          type: 'string',
-          title: 'AA',
-          name: 'AA',
+        RENEW_CREDIT_CARD_PART: {
+          key: 'RENEW_CREDIT_CARD_PART',
+          type: 'object',
+          name: 'RENEW_CREDIT_CARD_PART',
           visible: false,
-          'x-mega-props': {
-            wrapperCol: 24,
-          },
-        },
-        BB: {
-          ...testProps,
-          key: 'BB',
-          type: 'string',
-          title: 'BB',
-          name: 'BB',
-          visible: false,
-          'x-mega-props': {
-            wrapperCol: 24,
-          },
-        },
-        CC: {
-          ...testProps,
-          key: 'CC',
-          type: 'string',
-          title: 'CC',
-          name: 'CC',
-          visible: false,
-          'x-mega-props': {
-            wrapperCol: 24,
+          'x-component': 'blank-wrapper',
+          properties: {
+            AA: {
+              ...testProps,
+              key: 'AA',
+              type: 'string',
+              title: 'AA',
+              name: 'AA',
+              visible: true,
+              'x-mega-props': {
+                wrapperCol: 24,
+              },
+            },
+            BB: {
+              ...testProps,
+              key: 'BB',
+              type: 'string',
+              title: 'BB',
+              name: 'BB',
+              visible: true,
+              'x-mega-props': {
+                wrapperCol: 24,
+              },
+            },
+            CC: {
+              ...testProps,
+              key: 'CC',
+              type: 'string',
+              title: 'CC',
+              name: 'CC',
+              visible: true,
+              'x-mega-props': {
+                wrapperCol: 24,
+              },
+            },
           },
         },
       },
