@@ -35,34 +35,6 @@ const schema = {
         labelAlign: 'top',
       },
       properties: {
-        // paymentMethod: {
-        //   ...paymentMethodProps,
-        //   key: 'paymentMethod',
-        //   type: 'string',
-        //   name: 'paymentMethod',
-        //   'x-component': 'select',
-        //   'x-mega-props': {
-        //     wrapperCol: 24,
-        //   },
-        //   enum: [
-        //     {
-        //       label: '支付宝',
-        //       value: '1',
-        //     },
-        //     {
-        //       label: '微信',
-        //       value: '3',
-        //     },
-        //     {
-        //       label: '现金',
-        //       value: '5',
-        //     },
-        //     {
-        //       label: '支票',
-        //       value: '8',
-        //     },
-        //   ],
-        // },
         AA: {
           ...testProps,
           key: 'AA',
